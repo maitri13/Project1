@@ -7,11 +7,8 @@ h3    {color:Red}
 </style>
 </head>
 
-<<<<<<< Updated upstream
-<body background="http://www.incomeactivator.com/images/freebg4.jpg>
-=======
-<body background="http://www.incomeactivator.com/images/freebg5.jpg">
->>>>>>> Stashed changes
+<body background="http://www.incomeactivator.com/images/freebg4.jpg">
+
 
 <title>Hello There!</title>
 <body>
@@ -23,9 +20,19 @@ In my free time I practice <a href=“http://www.zentangle.com”>Zentagle Art</
 
 <p>Playing with JAVAScripts</p>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Forgot Date & Time?</button>
+<p>I want to count calories for today</p>
+<p>I ate bread, cheese, peanut butter and salad</p>
+
+<button onclick="myFunction()">Calculate!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = (170*10 + 130*10 + 80*10 + 100*10) / 10;
+    document.getElementById("demo").innerHTML = "170 + 130 + 80 + 100 = " + x;
+}
+</script>
 
 <p><script>
 document.write(5+2);
