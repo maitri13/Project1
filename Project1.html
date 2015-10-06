@@ -34,8 +34,6 @@ function myFunction() {
 }
 </script>
 
-
-
 <p>You have won a goodie!</p>
 
 <button onclick="Function2()">Claim here!</button>
@@ -46,5 +44,16 @@ function Function2() {
 }
 </script>
 
+<p><button onclick="NewFunction()">Try it</button></p>
+
+<p id="demo">I love to study!</p>
+
+<script>
+function NewFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace("study","sleep");
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
 </body>
 </html>
